@@ -5,7 +5,8 @@ public class Cliente {
     private String nombre;
     private String apellidos;
     private String direccion;
-    private String codigo;
+    private String codigoFicha;
+    private ArrayList<Venta> venta;
 
     public String getDni() {
         return dni;
@@ -39,12 +40,12 @@ public class Cliente {
         this.direccion = direccion;
     }
 
-    public String getCodigo() {
-        return codigo;
+    public String getCodigoFicha() {
+        return codigoFicha;
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public void setCodigoFicha(String codigoFicha) {
+        this.codigoFicha = codigoFicha;
     }
 
     public ArrayList<Venta> getVenta() {
@@ -55,6 +56,6 @@ public class Cliente {
         this.venta = venta;
     }
 
-    private ArrayList<Venta> venta;
+
 
 }
